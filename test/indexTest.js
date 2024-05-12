@@ -33,7 +33,6 @@ describe('index.js', function () {
     describe('destructivelyRemoveLastCat()', function () {
       it('removes the last cat from the cats array', function () {
         destructivelyRemoveLastCat();
-
         expect(cats).to.have.ordered.members(["Milo", "Otis"]).and.to.not.include('Garfield');
       });
     });
